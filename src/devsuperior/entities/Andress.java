@@ -3,12 +3,12 @@ package devsuperior.entities;
 public class Andress {
 
     private String email;
-    private String phone;
+    private Integer phone;
 
     public Andress() {
     }
 
-    public Andress(String email, String phone) {
+    public Andress(String email, Integer phone) {
         this.email = email;
         this.phone = phone;
     }
@@ -21,11 +21,11 @@ public class Andress {
         this.email = email;
     }
 
-    public String getPhone() {
+    public Integer getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(Integer phone) {
         this.phone = phone;
     }
 }

@@ -64,14 +64,14 @@ public class Department {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("FOLHA DE PAGAMENTO: \n");
-        sb.append("Departamento " + name + "= R$ " + String.format("%.2f", payRoll() + "\n"));
+        sb.append("Departamento " + name + "= R$ ").append(String.format("%.2f", payRoll()) + "\n");
         sb.append("Pagamento realizado no dia ");
         sb.append(payDay + "\n");
-        sb.append("Funcionários: \n");
+        sb.append("Funcionarios: \n");
         for (Employee emp : employees) {
             sb.append(emp.getName() + "\n");
         }
-        sb.append("Para dúvidas favor entrar em contato: ");
+        sb.append("Para duvidas favor entrar em contato: ");
         sb.append(andress.getEmail());
 
         return sb.toString();
